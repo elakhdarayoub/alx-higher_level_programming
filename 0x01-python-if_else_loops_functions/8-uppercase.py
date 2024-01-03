@@ -6,4 +6,5 @@ def uppercase(str):
             copy += chr(ord(c) - 32)
         else:
             copy += c
-    print(copy)
+    print("{}".format(copy))
+uppercase("Hello world!")
