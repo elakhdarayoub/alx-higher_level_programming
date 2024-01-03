@@ -7,4 +7,3 @@ def uppercase(str):
         else:
             copy += c
     print("{}".format(copy))
-uppercase("Hello world!")
