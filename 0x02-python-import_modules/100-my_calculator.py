@@ -4,8 +4,6 @@ import sys
 
 if __name__ == "__main__":
     if not len(sys.argv) == 4:
-        for i in sys.argv:
-            print(i)
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     elif sys.argv[2] not in "+-*/":
@@ -20,7 +18,7 @@ if __name__ == "__main__":
         elif sys.argv[2] == '-':
             result = sub(a, b)
             print("{} - {} = {}".format(a, b, result))
-        elif sys.argv[2] == '*':
+        elif str(sys.argv[2]) == '*':
             result = mul(a, b)
             print("{} * {} = {}".format(a, b, result))
         elif sys.argv[2] == '/':
