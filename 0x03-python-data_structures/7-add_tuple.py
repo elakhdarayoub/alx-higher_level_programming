@@ -3,6 +3,8 @@
 def add_tuple(tuple_a=(), tuple_b=()):
     result = []
 
+    if not tuple_a or not tuple_b:
+        return None
     # Checking tuple_a
     if len(tuple_a) < 1:
         tuple_a = (0, 0)
