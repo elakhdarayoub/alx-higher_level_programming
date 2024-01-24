@@ -53,7 +53,3 @@ class Square:
             [print(" ", end='') for _ in range(self.__position[0])]
             [print("#", end='') for _ in range(self.__size)]
             print("")
-
-
-my_square = Square(3, "Position")
-print()
