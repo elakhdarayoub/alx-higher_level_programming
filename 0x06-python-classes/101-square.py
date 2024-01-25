@@ -51,3 +51,4 @@ class Square():
     """Called on print function"""
     def __str__(self):
         self.my_print()
+        return ""
