@@ -52,4 +52,4 @@ class Rectangle:
         if self.__height is not 0 and self.__width is not 0:
             string += "\n".join("#" * self.__width
                                 for _ in range(self.__height))
-            return string
+        return string
