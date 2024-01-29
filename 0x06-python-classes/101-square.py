@@ -49,6 +49,7 @@ class Square():
             print("#" * self.__size)
 
     """Called on print function"""
-    def __repr__(self):
+    def __string__(self):
+        string = ""
         self.my_print()
-        return ""
+        return string
