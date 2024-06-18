@@ -1,0 +1,1 @@
+# This is the first encounter with Javascript in ALX.
