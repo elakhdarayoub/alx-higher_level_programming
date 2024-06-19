@@ -5,12 +5,16 @@ const args = process.argv;
 if (args.length <= 3) {
   console.log(0);
 } else {
-  let biggest = parseInt(args[2]);
-  let second;
-  for (let num = 2; num < args.length; num++) {
-    if (parseInt(args[num]) > biggest) {
-      second = biggest;
-      biggest = parseInt(args[num]);
+  let second = parseInt(args[2]);
+  let high = parseInt(args[3]);
+
+  for (let i = 2; i < args.length; i++) {
+    const current = parseInt(args[i]);
+    if (current > high) {
+      second = high;
+      high = current;
+    } else if (current > second && current > high) {
+      second = current;
     }
   }
   console.log(second);
