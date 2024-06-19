@@ -3,7 +3,7 @@
 const args = process.argv;
 
 if (args.length <= 3) {
-  console.log(0);
+  console.log('0');
 } else {
   let second = parseInt(args[2]);
   let high = parseInt(args[3]);
